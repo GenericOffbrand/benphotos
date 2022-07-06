@@ -1,0 +1,5 @@
+Website to-do list
+1.Swiper is slow in autoplay but faster in manaul 
+2.organize gallery to have a menu top or left
+3.add a zoom feature for gallery
+4. Gallery titles

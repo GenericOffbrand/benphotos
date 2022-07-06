@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Ben Martinez Photography
+		</title>
+		<!--It is important to paste link to fonts before the style sheet to load it before using it-->
+		 <link href="https://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet">
+		 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" href="images">
+		
+	</head>
+	<body>
+	<header>
+			<nav class="navbar">
+				<a href="index.html" class="logo">Ben Martinez</a>
+				<ul class="nav-menu">
+					<li class="nav-item"><a class="nav-link" href="index.html"><div class="entire">Home</div></a></li>
+					<li class="nav-item"><a class="nav-link" href="portfolio.html"><div class="entire">Portfolio</div></a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html"><div class="entire">Contact</div></a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html"><div class="entire">About</div></a></li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+			<!-- Slides -->
+				<div class="swiper-slide"><img class = "slideCotent" src="images/nice.jpg"></div>
+				<div class="swiper-slide"><img class = "slideCotent" src="images/nice2.jpg"></div>
+				<div class="swiper-slide"><img class = "slideCotent" src="images/net.jpg"></div>
+				<div class="swiper-slide"><img class = "slideCotent" src="images/couple.jpg"></div>
+				<div class="swiper-slide"><img class = "slideCotent" src="images/sofa.jpg"></div>
+				
+			</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination" id="dots"></div>
+
+				<!-- If we need navigation buttons -->
+
+				<div class="swiper-button-prev"></div>
+
+				<div class="swiper-button-next"></div>
+		</div>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+		
+			const swiper = new Swiper('.swiper', {
+			
+		
+		  loop: true,
+		  
+		  autoplay: {
+				  delay: 2000,
+				  disableOnInteraction: false,
+				},
+			
+			speed:1500,
+
+		  // If we need pagination
+		  pagination: {
+			el: '.swiper-pagination',
+		  },
+
+		  // Navigation arrows
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+
+  
+});
+		
+		</script>
+		<script>
+			
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>

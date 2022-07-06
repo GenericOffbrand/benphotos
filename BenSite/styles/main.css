@@ -1,0 +1,423 @@
+@font-face{
+	src:url("../fonts/AGENCYR.ttf");
+	font-family:Agency FB;
+}
+:root {
+  --headerhieght: 7.5vh;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*{
+  padding:0;
+  margin:0;
+}
+a:link {
+  color: inherit;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+body{
+	background-color: black;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+.logo{
+	font-size:50px;
+}
+header{
+	z-index: 100;
+	width: 100%;
+	
+	background-color: black;
+	color: white;
+	font-family:Agency FB;
+}
+li{
+	list-style:none;
+}
+a{
+	color:red;
+	text-decoration: none;
+}
+.navbar{
+	
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 0 24px;
+}
+.nav-menu{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	gap:60px;
+	font-size: 25px;
+}
+.nav-branding{
+	font-size: 2rem;
+}
+.nav-link{
+	width:100%;
+	transition: 0.7s ease;
+}
+.nav-link:hover{
+	color: blue;
+}
+.hamburger{
+	display:none;
+	cursor:pointer
+}
+.bar{
+	display:block;
+	width:50px;
+	height: 6px;
+	margin:10px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	background-color: white;
+}
+.cotainer{
+	width:100%;
+	height: 100vh;
+	background-image: url("../OpeningImage.jpg");
+	
+	background-position: center center;
+
+}
+.nav-photo{
+	
+	margin: 25px;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	gap:20vw;
+	font-size: 30px;
+}
+/*portifolio css styles*/
+.heading{
+	font-size:50px;
+}
+.gallery{
+	font-family: Agency FB;
+	font-size: 25px;
+	color: white;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+	text-align: center;
+	margin: 0px 20px;
+}
+/* find out why order matter in css class calling*/
+.gallery .box{
+	display:flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items:center;
+}
+.gallery .box .dream{
+	display: flex;
+	flex-direction:column;
+	width: 32.5%;
+}
+.gallery .box .dream img{
+	width:100%;
+	margin-bottom: 15px;
+	border-radius:5px;
+}
+.cover-img{
+	display: flex;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	border:0 0 0 0;
+	width: 100%;
+	height:auto;
+}
+.downButton{
+	display:flex;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	border:0 0 0 0;
+	position: absolute;
+	top: 90vh; 
+	left: 50%;
+	border: 1px;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.downArrow{
+	
+	width: 10vh;
+	height: auto;
+}
+@keyframes example {
+  0%{top: 90vh;}
+  50% {top: 88vh; padding-bottom: 2vh;}
+  100% {top: 90vh;}
+}
+
+.slideShow{
+	width:100%;
+	background-size: cover;
+	background-color:red;
+	
+}
+.swiper{
+	height: calc(100vh);
+	width: 100%;
+	
+}
+:root {
+    --swiper-theme-color: #000;
+}
+.swiper-wrapper{
+	width:100%;
+}
+.swiper-slide{
+	width:100%;
+}
+.slideCotent{
+	display: block;
+	width: 100vw;
+	height: 100%;
+	object-fit: cover;
+}
+.appointments{
+	height:100vh;
+	width:100%;
+	background:rgb(242, 242, 242);
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+}
+.contactForm{
+	font-family: Agency FB;
+	font-size: 25px;
+	display:grid;
+	margin: 4vw;
+
+}
+
+.contactImage{
+	
+	width:100%;
+	height: 100vh;
+	background-image: url("../images/building.jpg");
+	background-size: cover;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+label{
+
+	display: flex;
+    align-items: center;
+}
+#sub{
+	font-size:2.5vh;
+	margin-top:2.5vh;
+}
+#info{
+	margin: 1vh;
+}
+input[type="submit"]{
+	padding: 2.5%;
+	width:100%;
+	font-size:2.5vh;
+    font-family: Agency FB;
+	background-color : rgb(230, 230, 230);
+}
+input[type="text"],input[type="email"],input[type="tel"],input[type="date"]{
+	padding: 2%;
+	height: 50%;
+	width:100%;
+	font-size:2.5vh;
+    font-family: Agency FB;
+	background-color : rgb(230, 230, 230);
+}
+#mes{
+	padding: 2.5%;
+	font-size:2.5vh;
+	font-family: Agency FB;
+	height: 75%;
+	width:100%;
+	background-color : rgb(230, 230, 230);
+}
+#meslabel{
+	margin-bottom:.5vh;
+}
+#eventM{
+	margin-top:2.5vh;
+	display:grid;
+	grid-row-gap: 0vh;
+	grid-template-columns: 1fr;
+	height: 100%;
+	width:100%;
+}
+#inputFields{
+	display:grid;
+	grid-row-gap: 2.5vh;
+	grid-column-gap: 2.5vh;
+	grid-template-columns: 1fr 1fr;
+}
+#contactIntro{
+	font-size: 5vw;
+}
+#mesdiv{
+	height: 25vh;
+}
+div{
+	padding:0;
+	margin:0;
+}
+
+#contactSubmit:hover{
+	background-color: rgb(117, 129, 107);
+	
+}
+
+textarea {
+  resize: none;
+}
+.entire{
+	width:100%;
+}
+
+@media only screen and (max-width: 1000px){
+	.gallery .box{
+		flex-direction:column;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.gallery .box .dream{
+		width: 100%;
+	}
+	.logo{
+		font-size:100px;
+	}
+	.hamburger{
+		display:block
+	}
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(16px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-16px) rotate(-45deg);
+	}
+	.nav-menu{
+	
+		height:75vh;
+		top:115px;
+		width:100%;
+		position:absolute;
+		left:-100%;
+		gap:0;
+		flex-direction:column;
+		background-color: black;
+		transition: 0.3s;
+		
+	}
+	.nav-item{
+		margin: 50px 0px;
+		text-align: center;
+		width: 100%;
+		font-size:5vh;
+	}
+	.nav-menu.active{
+		top:115px;
+		left:0;
+		width:100%;
+		height:75vh;
+		z-index:2;
+	}
+	
+	.swiper-pagination-bullet {
+        --bullet-background: #000000;
+        width: 20px ;
+        height: 20px ;
+    }
+	#dots{
+		margin-bottom:10vh;
+	}
+	.swiper{
+		width: 100%;
+	}
+	.swiper.active{
+	}
+	.slideCotent{
+	  width:100%;
+	  object-fit: cover;
+	}
+  .contactForm{
+	font-family: Agency FB;
+	font-size: 5vw;
+	display:grid;
+	margin: 3vh;
+	}
+	.appointments{
+	height:100vh;
+	width:100%;
+	display:grid;
+	grid-template-columns: 0fr 2fr;
+
+	}
+	input{
+		padding:2.5%;
+
+		
+	}
+	#contactIntro{
+	font-size: 5vh;
+	}
+	#sub{
+	margin-top:5vh;
+	}
+	.nav-photo{
+	margin: 15px;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	gap:10vw;
+	font-size: 60px;
+	}
+	.nav-item-photo{
+		
+		text-align: center;
+		width: 100%;
+	}
+}
+
+input:focus{
+ background-color:white;
+}
+input[type=text], textarea, #contactSubmit{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+#mes:focus {
+  background-color:white;
+
+}
+
